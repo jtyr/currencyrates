@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+   Copyright 2010 Currency Rates Open Source project
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License. 
+-->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="@string/preferences_bank_category_title">
+
+        <ListPreference
+            android:key="preference_bank_list"
+            android:title="@string/preferences_bank_title"
+            android:summary="@string/preferences_bank_summary"
+            android:defaultValue="@string/preferences_bank_default_value"
+            android:entries="@array/select_bank"
+            android:entryValues="@array/select_bank_values"
+            android:dialogTitle="@string/preferences_bank_dialog_title" />
+        <EditTextPreference
+            android:key="preference_bank_alias"
+            android:title="@string/preferences_bank_alias_title"
+            android:summary="@string/preferences_bank_alias_summary"
+            android:defaultValue="@string/preferences_bank_default_value"
+            android:dialogTitle="@string/preferences_bank_alias_dialog_title"
+            android:capitalize="words"
+            android:maxLength="10"
+            android:maxLines="1"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/preferences_currency_category_title">
+
+        <ListPreference
+            android:key="preference_currency_list"
+            android:title="@string/preferences_currency_title"
+            android:summary="@string/preferences_currency_summary"
+            android:dialogTitle="@string/preferences_currency_dialog_title" />
+        <ListPreference
+            android:key="preference_exchange_list"
+            android:title="@string/preferences_exchange_title"
+            android:summary="@string/preferences_exchange_summary"
+            android:defaultValue="@string/preferences_exchange_default_value"
+            android:entries="@array/select_exchange"
+            android:entryValues="@array/select_exchange_values"
+            android:dialogTitle="@string/preferences_exchange_dialog_title" />
+        <ListPreference
+            android:key="preference_direction_list"
+            android:title="@string/preferences_direction_title"
+            android:summary="@string/preferences_direction_summary"
+            android:defaultValue="@string/preferences_direction_default_value"
+            android:entries="@array/select_direction"
+            android:entryValues="@array/select_direction_values"
+            android:dialogTitle="@string/preferences_direction_dialog_title" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/preferences_format_category_title">
+
+        <ListPreference
+            android:key="preference_date_format_list"
+            android:title="@string/preferences_date_format_title"
+            android:summary="@string/preferences_date_format_summary"
+            android:defaultValue="@string/preferences_date_format_default_value"
+            android:entryValues="@array/select_date_format"
+            android:dialogTitle="@string/preferences_date_format_dialog_title" />
+        <CheckBoxPreference
+            android:key="preference_time_format"
+            android:title="@string/preferences_time_format_title"
+            android:summary="@string/preferences_time_format_summary"
+            android:defaultValue="@string/preferences_time_format_default_value" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/preferences_timing_category_title">
+
+        <ListPreference
+            android:key="preference_period_list"
+            android:title="@string/preferences_period_title"
+            android:summary="@string/preferences_period_summary"
+            android:defaultValue="@string/preferences_period_default_value"
+            android:entries="@array/select_period"
+            android:entryValues="@array/select_period_values"
+            android:dialogTitle="@string/preferences_period_dialog_title" />
+        <Preference
+            android:key="preference_checkfrom"
+            android:title="@string/preferences_checkfrom_title"
+            android:summary="@string/preferences_checkfrom_summary" />
+        <Preference
+            android:key="preference_checkto"
+            android:title="@string/preferences_checkto_title"
+            android:summary="@string/preferences_checkto_summary" />
+        <Preference
+            android:key="preference_checkday"
+            android:title="@string/preferences_checkday_title"
+            android:summary="@string/preferences_checkday_summary"
+            android:dialogTitle="@string/preferences_checkday_dialog_title" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/preferences_notification_category_title">
+
+        <CheckBoxPreference
+            android:key="preference_notification_checkbox"
+            android:title="@string/preferences_notification_title"
+            android:summary="@string/preferences_notification_summary"
+            android:defaultValue="@string/preferences_notification_default_value" />
+        <Preference
+            android:key="preference_tolerance"
+            android:title="@string/preferences_tolerance_title"
+            android:summary="@string/preferences_tolerance_summary"
+            android:dialogTitle="@string/preferences_tolerance_dialog_title"
+            android:dependency="preference_notification_checkbox" />
+        <CheckBoxPreference
+            android:key="preference_sound_checkbox"
+            android:title="@string/preferences_sound_title"
+            android:summary="@string/preferences_sound_summary"
+            android:defaultValue="@string/preferences_sound_default_value"
+            android:dependency="preference_notification_checkbox" />
+        <cz.tyr.android.currencyrates.MyRingtonePreference
+            android:key="preference_ringtone_pos"
+            android:title="@string/preferences_ringtone_pos_title"
+            android:summary="@string/preferences_ringtone_pos_summary"
+            android:ringtoneType="notification"
+            android:showSilent="false"
+            android:showDefault="true"
+            android:dependency="preference_sound_checkbox" />
+        <cz.tyr.android.currencyrates.MyRingtonePreference
+            android:key="preference_ringtone_neg"
+            android:title="@string/preferences_ringtone_neg_title"
+            android:summary="@string/preferences_ringtone_neg_summary"
+            android:ringtoneType="notification"
+            android:showSilent="false"
+            android:showDefault="true"
+            android:dependency="preference_sound_checkbox" />
+        <CheckBoxPreference
+            android:key="preference_vibrate_checkbox"
+            android:title="@string/preferences_vibrate_title"
+            android:summary="@string/preferences_vibrate_summary"
+            android:defaultValue="@string/preferences_vibrate_default_value"
+            android:dependency="preference_notification_checkbox" />
+        <CheckBoxPreference
+            android:key="preference_led_checkbox"
+            android:title="@string/preferences_led_title"
+            android:summary="@string/preferences_led_summary"
+            android:defaultValue="@string/preferences_led_default_value"
+            android:dependency="preference_notification_checkbox" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

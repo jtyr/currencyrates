@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+   Copyright 2010 Currency Rates Open Source project
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License. 
+-->
+
+<resources>
+    <style name="WidgetBackground">
+        <item name="android:background">@drawable/widget_bg</item>
+    </style>
+
+    <style name="Text">
+    </style>
+
+    <style name="Text.Loading">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="Text.Currency">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="Text.Rate">
+        <item name="android:textSize">24sp</item>
+        <item name="android:gravity">bottom|center</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="Text.RatePrev">
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">top|center</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="Text.Date">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="Text.Bank">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="Exchange">
+        <item name="android:paddingTop">2dip</item>
+        <item name="android:paddingRight">2dip</item>
+    </style>
+
+    <style name="Direction">
+        <item name="android:paddingTop">2dip</item>
+    </style>
+
+    <style name="OverviewLabel">
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingRight">4dip</item>
+        <item name="android:gravity">right</item>
+        <item name="android:layout_column">1</item>
+    </style>
+
+    <style name="OverviewText">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_column">2</item>
+    </style>
+
+    <style name="OverviewTableRow">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="CloseButton">
+        <item name="android:width">150dip</item>
+        <item name="android:layout_marginTop">5dip</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="InfoScrollViewBG">
+        <item name="android:background">#333333</item>
+    </style>
+</resources>

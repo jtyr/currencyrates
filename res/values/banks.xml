@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+   Copyright 2010 Currency Rates Open Source project
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License. 
+-->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- RB_CZ settings -->
+    <string name="RB_CZ_default_currency">EUR</string>
+    <string name="RB_CZ_url_web">http://rb.cz/o-bance/currency-rates/</string>
+    <string name="RB_CZ_url_data">http://rb.cz/views/components/rates/ratesXML.jsp?day=<xliff:g id="day">%d</xliff:g>&amp;month=<xliff:g id="month">%d</xliff:g>&amp;year=<xliff:g id="year">%d</xliff:g></string>
+    <string name="RB_CZ_timezone">2</string>
+    <string name="RB_CZ_alias">RB (CZ)</string>
+    <string name="RB_CZ_rate_format">0.000</string>
+    <string-array name="RB_CZ_select_currency">
+        <item>AUD (1)</item>
+        <item>CAD (1)</item>
+        <item>CHF (1)</item>
+        <item>DKK (1)</item>
+        <item>EUR (1)</item>
+        <item>GBP (1)</item>
+        <item>HRK (1)</item>
+        <item>HUF (100)</item>
+        <item>JPY (100)</item>
+        <item>NOK (1)</item>
+        <item>NZD (1)</item>
+        <item>PLN (1)</item>
+        <item>RON (1)</item>
+        <item>RUB (100)</item>
+        <item>SEK (1)</item>
+        <item>TRY (1)</item>
+        <item>USD (1)</item>
+    </string-array>
+    <string-array name="RB_CZ_select_currency_values">
+        <item>AUD</item>
+        <item>CAD</item>
+        <item>CHF</item>
+        <item>DKK</item>
+        <item>EUR</item>
+        <item>GBP</item>
+        <item>HRK</item>
+        <item>HUF</item>
+        <item>JPY</item>
+        <item>NOK</item>
+        <item>NZD</item>
+        <item>PLN</item>
+        <item>RON</item>
+        <item>RUB</item>
+        <item>SEK</item>
+        <item>TRY</item>
+        <item>USD</item>
+    </string-array>
+
+    <!-- UCB_CZ settings (http://www.unicreditbank.cz/kurzy-xml.php) -->
+    <string name="UCB_CZ_default_currency">EUR</string>
+    <string name="UCB_CZ_url_web">http://www.unicreditbank.cz/cz/kurzovni-listek-men.html</string>
+    <string name="UCB_CZ_url_data">http://www.unicreditbank.cz/kurzy-xml.php?den=<xliff:g id="day">%d</xliff:g>.<xliff:g id="month">%d</xliff:g>.<xliff:g id="year">%d</xliff:g></string>
+    <string name="UCB_CZ_timezone">2</string>
+    <string name="UCB_CZ_alias">UCB (CZ)</string>
+    <string name="UCB_CZ_rate_format">0.000</string>
+    <string-array name="UCB_CZ_select_currency">
+        <item>AUD (1)</item>
+        <item>BAM (1)</item>
+        <item>CAD (1)</item>
+        <item>DKK (1)</item>
+        <item>EUR (1)</item>
+        <item>GBP (1)</item>
+        <item>HRK (1)</item>
+        <item>CHF (1)</item>
+        <item>JPY (100)</item>
+        <item>NOK (1)</item>
+        <item>NZD (1)</item>
+        <item>SEK (1)</item>
+        <item>USD (1)</item>
+    </string-array>
+    <string-array name="UCB_CZ_select_currency_values">
+        <item>AUD</item>
+        <item>BAM</item>
+        <item>CAD</item>
+        <item>DKK</item>
+        <item>EUR</item>
+        <item>GBP</item>
+        <item>HRK</item>
+        <item>CHF</item>
+        <item>JPY</item>
+        <item>NOK</item>
+        <item>NZD</item>
+        <item>SEK</item>
+        <item>USD</item>
+    </string-array>
+
+    <!-- TB settings -->
+    <string name="TB_default_currency">USD</string>
+    <string name="TB_url_web">http://www.android.com</string>
+    <string name="TB_url_data"></string>
+    <string name="TB_timezone">2</string>
+    <string name="TB_alias">Test</string>
+    <string name="TB_rate_format">0.000</string>
+    <string-array name="TB_select_currency">
+    <item>EUR (1)</item>
+        <item>GBP (1)</item>
+        <item>JPY (1)</item>
+        <item>USD (1)</item>
+    </string-array>
+    <string-array name="TB_select_currency_values">
+        <item>EUR</item>
+        <item>GBP</item>
+        <item>JPY</item>
+        <item>USD</item>
+    </string-array>
+
+</resources>

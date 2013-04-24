@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+   Copyright 2010 Currency Rates Open Source project
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License. 
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <ScrollView
+        style="@style/InfoScrollViewBG"
+        android:layout_weight="1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TableLayout
+            android:padding="10dip"
+            android:shrinkColumns="1"
+            android:stretchColumns="2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TableRow
+                style="@style/OverviewTableRow" >
+
+                <TextView
+                    android:text="@string/overview_bank"
+                    style="@style/OverviewLabel" />
+
+                <TextView
+                    android:id="@+id/overviewBank"
+                    style="@style/OverviewText" />
+            </TableRow>
+
+            <TableRow
+                style="@style/OverviewTableRow" >
+
+                <TextView
+                    android:text="@string/overview_currency"
+                    style="@style/OverviewLabel" />
+
+                <TextView
+                    android:id="@+id/overviewCurrency"
+                    style="@style/OverviewText" />
+            </TableRow>
+
+            <TableRow
+                style="@style/OverviewTableRow" >
+
+                <TextView
+                    android:text="@string/overview_rate"
+                    style="@style/OverviewLabel" />
+
+                <TextView
+                    android:id="@+id/overviewRate"
+                    style="@style/OverviewText" />
+            </TableRow>
+
+            <TableRow
+                style="@style/OverviewTableRow" >
+
+                <TextView
+                    android:text="@string/overview_rate_prev"
+                    style="@style/OverviewLabel" />
+
+                <TextView
+                    android:id="@+id/overviewRatePrev"
+                    style="@style/OverviewText" />
+            </TableRow>
+
+            <TableRow
+                style="@style/OverviewTableRow" >
+
+                <TextView
+                    android:text="@string/overview_rate_diff"
+                    style="@style/OverviewLabel" />
+
+                <TextView
+                    android:id="@+id/overviewRateDiff"
+                    style="@style/OverviewText" />
+            </TableRow>
+
+            <TableRow
+                style="@style/OverviewTableRow" >
+
+                <TextView
+                    android:text="@string/overview_rate_time"
+                    style="@style/OverviewLabel" />
+
+                <TextView
+                    android:id="@+id/overviewRateTime"
+                    style="@style/OverviewText" />
+            </TableRow>
+
+            <TableRow
+                style="@style/OverviewTableRow" >
+
+                <TextView
+                    android:text="@string/overview_last_update"
+                    style="@style/OverviewLabel" />
+
+                <TextView
+                    android:id="@+id/overviewLastUpdate"
+                    style="@style/OverviewText" />
+            </TableRow>
+
+            <TableRow
+                style="@style/OverviewTableRow" >
+
+                <TextView
+                    android:text="@string/overview_last_notif"
+                    style="@style/OverviewLabel" />
+
+                <TextView
+                    android:id="@+id/overviewLastNotif"
+                    style="@style/OverviewText" />
+            </TableRow>
+
+            <TableRow
+                style="@style/OverviewTableRow" >
+
+                <TextView
+                    android:text="@string/overview_last_notif_rate"
+                    style="@style/OverviewLabel" />
+
+                <TextView
+                    android:id="@+id/overviewLastNotifRate"
+                    style="@style/OverviewText" />
+            </TableRow>
+
+            <TableRow
+                style="@style/OverviewTableRow" >
+
+                <TextView
+                    android:text="@string/overview_last_notif_diff"
+                    style="@style/OverviewLabel" />
+
+                <TextView
+                    android:id="@+id/overviewLastNotifDiff"
+                    style="@style/OverviewText" />
+            </TableRow>
+
+            <TableRow
+                style="@style/OverviewTableRow" >
+
+                <TextView
+                    android:text="@string/overview_last_widget_update"
+                    style="@style/OverviewLabel" />
+
+                <TextView
+                    android:id="@+id/overviewLastWidgetUpdate"
+                    style="@style/OverviewText" />
+            </TableRow>
+
+        </TableLayout>
+    </ScrollView>
+
+    
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_weight="0"
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/overviewRefreshButton"
+            android:text="@string/overview_refresh"
+            style="@style/CloseButton" />
+
+        <Button
+            android:id="@+id/overviewCloseButton"
+            android:text="@string/overview_close"
+            style="@style/CloseButton" />
+
+    </LinearLayout>
+
+</LinearLayout>

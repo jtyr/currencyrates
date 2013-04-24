@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+   Copyright 2010 Currency Rates Open Source project
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License. 
+-->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cz.tyr.android.currencyrates"
+    android:versionCode="1"
+    android:versionName="1.0.0">
+
+    <application android:icon="@drawable/logo"
+        android:label="@string/app_name">
+
+        <!-- Broadcast Receiver that will process AppWidget updates -->
+        <receiver
+            android:name=".CurrencyRates"
+            android:label="@string/widget_name">
+
+            <intent-filter>
+                <action    android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_rates" />
+        </receiver>
+
+        <!-- Service to perform web API queries -->
+        <service android:name=".UpdateService" />
+
+        <!-- Dialog -->
+        <activity
+            android:name=".DialogActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- Settings -->
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/preferences_activity_title">
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- About -->
+        <activity
+            android:name=".AboutActivity"
+            android:label="@string/about_activity_title">
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- Overview -->
+        <activity
+            android:name=".OverviewActivity"
+            android:label="@string/overview_activity_title">
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-sdk android:minSdkVersion="4" />
+</manifest>

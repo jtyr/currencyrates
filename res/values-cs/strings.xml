@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+   Copyright 2010 Currency Rates Open Source project
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License. 
+-->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="widget_error">Chyba widgetu!</string>
+    <string name="widget_loading">Načítám...</string>
+    <string name="widget_network_error">Síť není dostupná!</string>
+    <string name="widget_download_error">Stahování dat selhalo!</string>
+
+    <string name="notification_comment">Klikni zde pro zobrazení podrobností.</string>
+    <string name="notification_ticker"><xliff:g id="currency">%s</xliff:g> změněn</string>
+
+    <string name="dialog_activity_title">Seznam akcí</string>
+    <string name="dialog_browser">Problížeč</string>
+    <string name="dialog_overview">Přehled</string>
+    <string name="dialog_share">Sdílet</string>
+    <string name="dialog_update">Aktializovat</string>
+    <string name="dialog_settings">Nastavení</string>
+    <string name="dialog_about">O aplikaci</string>
+    <string name="dialog_menu_update">Aktualizovat widget</string>
+    <string name="dialog_share_title">Sdílet skrze...</string>
+    <string-array name="select_share">
+        <item>SMS</item>
+        <item>E-mail</item>
+    </string-array>
+    <string name="dialog_share_email_subject">Kurz <xliff:g id="currency">%s</xliff:g> se změnil</string>
+    <string name="dialog_share_email_message">Banka: <xliff:g id="bank">%s</xliff:g>\nMěna: <xliff:g id="currency">%s</xliff:g>\nKurz: <xliff:g id="rate">%s</xliff:g> (<xliff:g id="rate_diff">%s</xliff:g>)\nČas: <xliff:g id="date">%s</xliff:g></string>
+
+    <string name="about_activity_title">O aplikaci Currency Rates</string>
+    <string name="about_text">Tento widget umožňuje sledovat vývoj kurzu měn poskytovaný vaší bankou. Upozorní na změnu kurzu vybrané měny a zobrazí další informace o této změně.\n\nPokud vám v seznamu bank chybí vaše banka, můžete mě kontaktovat a já se ji pokusím přidat. Pokud programujete v Javě, můžete se pokusit vaší banku přidat. Všechny zdrojové kódy jsou dostupné na stránce projektu:\n\nhttp://code.google.com/p/currencyrates</string>
+    <string name="about_close">Zavřít</string>
+
+    <string name="overview_activity_title">Přehled</string>
+    <string name="overview_bank">Banka:</string>
+    <string name="overview_currency">Měna:</string>
+    <string name="overview_rate">Kurz:</string>
+    <string name="overview_rate_prev">Předchozí kurz:</string>
+    <string name="overview_rate_diff">Rozdíl kurzu:</string>
+    <string name="overview_rate_time">Čas kurzu:</string>
+    <string name="overview_last_update">Poslední aktualizace:</string>
+    <string name="overview_last_notif">Poslední upozornění:</string>
+    <string name="overview_last_notif_rate">Kurz při posledním upozornění:</string>
+    <string name="overview_last_notif_diff">Od posledního upozornění:</string>
+    <string name="overview_last_widget_update">Poslední aktualizace widgetu:</string>
+    <string name="overview_refresh">Obnovit</string>
+    <string name="overview_close">Zavřít</string>
+
+    <string name="preferences_activity_title">Nastavení</string>
+
+    <string name="preferences_bank_category_title">Banka</string>
+    <string name="preferences_bank_title">Banka</string>
+    <string name="preferences_bank_summary">Seznam všech bank</string>
+    <string name="preferences_bank_dialog_title">Banky</string>
+    <string-array name="select_bank">
+        <item>Raiffeisen Bank (CZ)</item>
+        <item>UniCredit Bank (CZ)</item>
+        <item>Testovací banka</item>
+    </string-array>
+    <string name="preferences_bank_alias_title">Alias banky</string>
+    <string name="preferences_bank_alias_summary">Alis banky viditelný ve widgetu</string>
+    <string name="preferences_bank_alias_dialog_title">Alias banky</string>
+
+    <string name="preferences_currency_category_title">Měna</string>
+    <string name="preferences_currency_title">Měna</string>
+    <string name="preferences_currency_summary">Seznam všech měn</string>
+    <string name="preferences_currency_dialog_title">Seznam měn</string>
+
+    <string name="preferences_exchange_title">Typ směny</string>
+    <string name="preferences_exchange_summary">Vyběr mezi devizou nebo valutou</string>
+    <string name="preferences_exchange_dialog_title">Typ směny</string>
+    <string-array name="select_exchange">
+        <item>Deviza</item>
+        <item>Valuta</item>
+    </string-array>
+    <string name="preferences_direction_title">Směr směny</string>
+    <string name="preferences_direction_summary">Výběr nákupu nebo prodeje</string>
+    <string name="preferences_direction_dialog_title">Směr směny</string>
+    <string-array name="select_direction">
+        <item>Nákup</item>
+        <item>Prodej</item>
+    </string-array>
+
+    <string name="preferences_format_category_title">Formát datumu a času</string>
+    <string name="preferences_date_format_title">Formát datumu</string>
+    <string name="preferences_date_format_summary">Výběr formátu datumu</string>
+    <string name="preferences_date_format_dialog_title">Formát datumu</string>
+    <string name="preferences_time_format_title">24-hodinový formát</string>
+    <string name="preferences_time_format_summary">Použít formát 13:00 místo 1:00pm</string>
+
+    <string name="preferences_timing_category_title">Časování</string>
+    <string name="preferences_period_title">Perioda aktualizace</string>
+    <string name="preferences_period_summary">Jak často číst nová data</string>
+    <string name="preferences_period_dialog_title">Perioda aktualizace</string>
+    <string-array name="select_period">
+        <item>10 minut</item>
+        <item>20 minut</item>
+        <item>30 minut</item>
+        <item>1 hodina</item>
+        <item>2 hodiny</item>
+        <item>3 hodiny</item>
+        <item>6 hodin</item>
+    </string-array>
+    <string name="preferences_checkfrom_title">Čas zahájení</string>
+    <string name="preferences_checkfrom_summary">Kdy začít číst data</string>
+    <string name="preferences_checkto_title">Čas zastavení</string>
+    <string name="preferences_checkto_summary">Kdy přestat číst data</string>
+    <string name="preferences_checkday_title">Dny</string>
+    <string name="preferences_checkday_summary">V jaké dny v týdnu číst data</string>
+    <string name="preferences_checkday_dialog_title">Aktualizovat ve dnech</string>
+    <string-array name="select_checkday">
+        <item>Pondělí</item>
+        <item>Úterý</item>
+        <item>Středa</item>
+        <item>Čtvrtek</item>
+        <item>Pátek</item>
+        <item>Sobota</item>
+        <item>Neděle</item>
+    </string-array>
+
+    <string name="preferences_notification_category_title">Upozorňění</string>
+    <string name="preferences_notification_title">Upozornění</string>
+    <string name="preferences_notification_summary">Zobrazit upozornění při změně kurzu</string>
+
+    <string name="preferences_tolerance_title">Tolerance</string>
+    <string name="preferences_tolerance_summary">Přírustek kurzu potřebný k zobrazení dalšího upozornění</string>
+    <string name="preferences_tolerance_dialog_title">Tolerance</string>
+
+    <string name="preferences_sound_title">Zvuk</string>
+    <string name="preferences_sound_summary">Přehrát zvuk když se změní kurz</string>
+
+    <string name="preferences_ringtone_pos_title">Pozitivní zvuk</string>
+    <string name="preferences_ringtone_pos_summary">Zvuk přehraný při pozitivní změně kurzu</string>
+
+    <string name="preferences_ringtone_neg_title">Negativní zvuk</string>
+    <string name="preferences_ringtone_neg_summary">Zvuk přehraný při negativní změně kurzu</string>
+
+    <string name="preferences_vibrate_title">Vibrace</string>
+    <string name="preferences_vibrate_summary">Vibrovat při změně kurzu</string>
+
+    <string name="preferences_led_title">Dioda</string>
+    <string name="preferences_led_summary">Blikat LED diodou při změně kurzu</string>
+
+</resources>
